@@ -6,6 +6,9 @@ on:
       paths:
         description: 'Paths to test'
         required: true
+      pr:
+        description: 'Pull request ID'
+        required: true
       meta:
         description: 'Meta Data'
         required: true
