@@ -26,7 +26,7 @@ jobs:
         run: npm install
 
       - name: Run DeepUnit
-        run: npx deepunit@latest --f ${{ github.event.inputs.paths }} --json --ff --ap --email 'support@deepunit.ai' --meta ${{ github.event.inputs.meta }}
+        run: npx deepunit@1.8.3 --f ${{ github.event.inputs.paths }} --json --ff --ap --email 'support@deepunit.ai' --meta ${{ github.event.inputs.meta }}
 
       - name: Store as Artifact
         uses: actions/upload-artifact@v2
