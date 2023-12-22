@@ -34,7 +34,7 @@ export class Forecast {
     orderBy: 'asc' | 'desc' = 'desc',
     orderField: keyof BeachForecast = 'rating'
   ): Promise<TimeForecast[]> {
-    logger.info('test this')
+    logger.info('test ko')
     try {
       const beachForecast = await this.calculateRating(beaches);
       const timeForecast = this.mapForecastByTime(beachForecast);
