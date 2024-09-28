@@ -21,6 +21,7 @@ export class Rating {
   constructor(private beach: Beach) {}
 
   public getRateForPoint(point: ForecastPoint): number {
+    logger.log("ok")
     const swellDirection = this.getPositionFromLocation(point.swellDirection);
     const windDirection = this.getPositionFromLocation(point.windDirection);
     const windAndWaveRating = this.getRatingBasedOnWindAndWavePositions(
